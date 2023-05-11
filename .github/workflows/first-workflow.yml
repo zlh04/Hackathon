@@ -2,7 +2,7 @@ name: First Workflow
 on:
   workflow_dispatch:
 jobs:
-  build:
+  Job1:
     runs-on: ubutu-latest
     name: job 1
     steps:
@@ -10,7 +10,7 @@ jobs:
            echo "step 1"
            echo "step 2"
 
-  build:
+  Job2:
     runs-on: ubutu-latest
     name: job 2
     steps:
