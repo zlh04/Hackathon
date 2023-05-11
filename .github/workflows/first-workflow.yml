@@ -1,0 +1,10 @@
+name: First Workflow
+on:
+  workflow_dispatch:
+jobs:
+  name: job 1
+  steps:
+    - run:
+      echo "step 1"
+      echo "step 2"
+
