@@ -10,3 +10,12 @@ jobs:
            echo "step 1"
            echo "step 2"
 
+  build:
+    runs-on: ubutu-latest
+    name: job 2
+    steps:
+    - name: Ship it
+      uses: mscoutermarsh/cowsays-action@master
+      with:
+        text: 'ship ship ship!'
+        color: 'red'
