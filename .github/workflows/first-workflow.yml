@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   Job1:
-    runs-on: ubutu-latest
+    runs-on: ubuntu-latest
     name: job 1
     steps:
        - run: |
@@ -11,7 +11,7 @@ jobs:
            echo "step 2"
 
   Job2:
-    runs-on: ubutu-latest
+    runs-on: ubuntu-latest
     name: job 2
     steps:
     - name: Ship it
