@@ -1,0 +1,25 @@
+name: First_Worklfow1
+on:
+  workflow_dispatch
+jobs:
+  job-1: 
+    runs-on: ubuntu-latest
+    name: Echo
+    steps: 
+        - run: | 
+            echo "step 1"
+            echo "step 2"
+          
+
+  jobs-2:
+      runs-on: ubuntu-latest
+      name: Cowsay
+      steps:
+      - name: Ship it
+        uses: mscoutermarsh/cowsays-action@master
+        with:
+          text: 'ship ship ship!'
+          color: 'red'
+
+        
+  
