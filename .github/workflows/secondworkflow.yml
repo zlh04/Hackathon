@@ -3,22 +3,22 @@ on:
   workflow_dispatch
 jobs:
   job-1:
-    name: CLI
     runs-on: ubuntu latest
+    name: CLI
     steps:
-      - run:
+      - run: |
           echo "step 1"
           echo "step 2"
           
   job-2:
-    name: Cowsays
     runs-on: ubuntu latsest
+    name: Cowsays
     steps:
-      - name: Ship it
-        uses: mscoutermarsh/cowsays-action@master
-        with:
-          text: 'ship ship ship!'
-          color: 'red'
+    - name: Ship it
+      uses: mscoutermarsh/cowsays-action@master
+      with:
+        text: 'ship ship ship!'
+        color: 'red'
 
 
     
